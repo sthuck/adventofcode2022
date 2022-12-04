@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "day3-python"
+version = "0.1.0"
+description = ""
+authors = ["Aviad Hadad <aviad@sthuck.info>"]
+readme = "README.md"
+packages = [{include = "day3_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
