@@ -1,10 +1,9 @@
 [tool.poetry]
-name = "day3-python"
+name = "advent-of-code-python"
 version = "0.1.0"
 description = ""
 authors = ["Aviad Hadad <aviad@sthuck.info>"]
 readme = "README.md"
-packages = [{include = "day3_python"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

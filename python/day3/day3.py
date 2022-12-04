@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import List
-from utils import read_file_to_lines,split_to_chunks
+from utils import read_file_to_lines, split_to_chunks
+
 
 @dataclass
 class Rucksack:
@@ -29,10 +30,11 @@ def chr_to_priority(char: str) -> int:
 
 
 def main():
-    lines = read_file_to_lines("input.txt")
+    lines = read_file_to_lines("day3/input.txt")
     sacks = [parser(line) for line in lines]
     print(sum(chr_to_priority(sack.common_item()) for sack in sacks))
-    #part2
+    # part2
+
     def find_common_in_sacks(sacks: List[Rucksack]) -> str:
         first = sacks[0]
         others = sacks[1:]

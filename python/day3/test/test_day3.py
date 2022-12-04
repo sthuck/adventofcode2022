@@ -1,4 +1,4 @@
-from main import Rucksack, parser
+from day3.day3 import parser
 import pytest
 
 
