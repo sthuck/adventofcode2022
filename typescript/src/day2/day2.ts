@@ -1,4 +1,4 @@
-import { readFileLines, reducers } from "./utils";
+import { readFileLines, reducers } from "../utils";
 enum RPS {
   Rock,
   Paper,
@@ -75,7 +75,7 @@ export const gameToResult = (
 };
 
 const main = () => {
-  const guide = readFileLines("input.txt");
+  const guide = readFileLines("src/day2/input.txt");
   console.log(guide);
 
   const result = guide

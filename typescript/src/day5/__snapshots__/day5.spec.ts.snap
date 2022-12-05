@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`day5 parse columns 1`] = `
+{
+  "1": Stack {
+    "list": [
+      "Z",
+      "N",
+    ],
+  },
+  "2": Stack {
+    "list": [
+      "M",
+      "C",
+      "D",
+    ],
+  },
+  "3": Stack {
+    "list": [
+      "P",
+    ],
+  },
+}
+`;
