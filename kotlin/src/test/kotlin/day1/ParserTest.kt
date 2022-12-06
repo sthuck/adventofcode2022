@@ -1,3 +1,7 @@
+package day1
+
+import day1.Elf
+import day1.Parser
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

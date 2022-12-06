@@ -1,3 +1,5 @@
+package day1
+
 import java.lang.Integer.parseInt
 
 object Parser {
