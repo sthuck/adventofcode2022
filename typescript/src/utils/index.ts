@@ -7,3 +7,13 @@ export const readFileLines = (path: string): string[] => {
 export const reducers = {
   sumNum: (acc: number, curr: number) => acc + curr,
 };
+
+export const untilFirst = <T, R>(arr: T[], mapper: (t: T) => R | null): R => {
+  for (const t of arr) {
+    const r = mapper(t);
+    if (r) {
+      return r;
+    }
+  }
+  throw new Error("No value found");
+};

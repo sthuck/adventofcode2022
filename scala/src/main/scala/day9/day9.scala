@@ -19,6 +19,12 @@ extension (c1: Coordinates) {
     val (x2, y2) = other
     (x1 - x2, y1 - y2)
   }
+  @targetName("add")
+  def +(other: Coordinates): Coordinates = {
+    val (x1, y1) = c1
+    val (x2, y2) = other
+    (x1 + x2, y1 + y2)
+  }
   def normalized: Coordinates = {
     val (x, y) = c1
     (if x != 0 then x / x.abs else x, if y != 0 then y / y.abs else y)
