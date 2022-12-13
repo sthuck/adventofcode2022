@@ -4,6 +4,24 @@ export const readFileLines = (path: string): string[] => {
   return readFileSync(path, "utf-8").split("\n");
 };
 
+export const splitLinesByLine = (
+  input: string[],
+  splitBy: string
+): string[][] => {
+  const result: string[][] = [];
+  let current: string[] = [];
+  for (const line of input) {
+    if (line === splitBy) {
+      result.push(current);
+      current = [];
+    } else {
+      current.push(line);
+    }
+  }
+  result.push(current);
+  return result;
+};
+
 export const reducers = {
   sumNum: (acc: number, curr: number) => acc + curr,
 };
