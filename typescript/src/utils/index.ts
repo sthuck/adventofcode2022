@@ -35,3 +35,6 @@ export const untilFirst = <T, R>(arr: T[], mapper: (t: T) => R | null): R => {
   }
   throw new Error("No value found");
 };
+
+export const sleep = (milliseconds: number | undefined) =>
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, milliseconds);
